@@ -78,22 +78,22 @@ const Portfolio = () => {
 
   const graphicProjects = [
     {
-      title: "Brand Identity Design",
-      description: "Complete brand identity package with logo, color palette, and brand guidelines",
+      title: "Poster",
+      description: "Dynamic poster design ",
       image: "./p4.jpg",
       category: "Graphic Design",
       tools: ["Adobe Illustrator", "Adobe Photoshop", "Figma"]
     },
     {
-      title: "Wildlife Photography Layout",
-      description: "Editorial design for nature and wildlife photography magazine spread",
+      title: "Social Media Posts",
+      description: "Complete brand identity package with logo, color palette, and brand guidelines",
       image: "./p5.jpg",
       category: "Graphic Design",
       tools: ["InDesign", "Photoshop", "Lightroom"]
     },
     {
-      title: "Safari Adventure Poster",
-      description: "Dynamic poster design for wildlife safari and adventure tourism",
+      title: "Standee",
+      description: "Standee of your own demand",
       image: "./p6.jpg",
       category: "Graphic Design",
       tools: ["Adobe Illustrator", "Adobe Photoshop"]
