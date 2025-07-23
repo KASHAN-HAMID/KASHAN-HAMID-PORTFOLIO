@@ -12,7 +12,7 @@ const reviews = [
     image: '/IMG-20250703-WA0022.jpg',
     rating: 5,
     review:
-      "We've been impressed by the creativity and professionalism of their design work. They truly understand our brand's vision and have helped us convey it effectively to our audience.",
+      "We've been impressed by the creativity and professionalism of his design work. They truly understand our brand's vision and have helped us convey it effectively to our audience.",
   },
   {
     name: 'Study Time Consultants',
@@ -20,7 +20,7 @@ const reviews = [
     image: 'IMG-20250703-WA0023.jpg',
     rating: 5,
     review:
-      'Working with BoldHue was an absolute pleasure. They delivered a stunning e-commerce platform that perfectly represents our brand. The UI/UX design is intuitive and our customers love it.',
+      'Working with Kashan was an absolute pleasure. They delivered a stunning e-commerce platform that perfectly represents our brand. The UI/UX design is intuitive and our customers love it.',
   },
   {
     name: 'V Study Abroad Consultants',
@@ -28,7 +28,7 @@ const reviews = [
     image: 'IMG-20250703-WA0024.jpg',
     rating: 5,
     review:
-      'The graphic design work BoldHue created for our marketing campaigns was outstanding. They truly understand how to create visuals that resonate with our target audience and drive engagement.',
+      'The graphic design work Kashan created for our marketing campaigns was outstanding. They truly understand how to create visuals that resonate with our target audience and drive engagement.',
   },
   {
     name: '',
@@ -44,7 +44,7 @@ const reviews = [
     image: 'IMG-20250703-WA0026.jpg',
     rating: 5,
     review:
-      'The team at BoldHue created a beautiful online store that perfectly captures the essence of our brand. The design is elegant and the shopping experience is smooth and enjoyable.',
+      'The team at Kashan created a beautiful online store that perfectly captures the essence of our brand. The design is elegant and the shopping experience is smooth and enjoyable.',
   },
   {
     name: 'HBAF',
@@ -52,7 +52,7 @@ const reviews = [
     image: 'IMG-20250703-WA0027.jpg',
     rating: 5,
     review:
-      'BoldHue delivered exceptional UI/UX design for our mobile app. Their user-centered approach resulted in a 40% increase in user engagement. Highly recommended!',
+      'Kashan delivered exceptional UI/UX design for our mobile app. Their user-centered approach resulted in a 40% increase in user engagement. Highly recommended!',
   },
 ];
 
