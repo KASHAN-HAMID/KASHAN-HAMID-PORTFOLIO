@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Dark Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Dark Theme Colors */
+    --background: 0 0% 3%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 3%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 98%;
+
+    --radius: 0.75rem;
+
+    /* Custom Portfolio Colors */
+    --dark-surface: 0 0% 8%;
+    --dark-surface-hover: 0 0% 12%;
+    --grey-light: 0 0% 25%;
+    --grey-dark: 0 0% 10%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 3%), hsl(0 0% 15%));
+    --gradient-accent: linear-gradient(135deg, hsl(0 0% 98%), hsl(0 0% 85%));
+    --gradient-surface: linear-gradient(145deg, hsl(0 0% 5%), hsl(0 0% 10%));
+
+    /* Shadows */
+    --shadow-dark: 0 25px 50px -12px hsl(0 0% 0% / 0.25);
+    --shadow-glow: 0 0 40px hsl(0 0% 98% / 0.1);
+    --shadow-card: 0 10px 25px -5px hsl(0 0% 0% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    --transition-quick: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  /* Animated Button Styles */
+  .btn-animated {
+    @apply relative overflow-hidden transition-all duration-500 ease-out;
+    @apply border border-primary/20 bg-transparent;
+    @apply before:absolute before:inset-0 before:-z-10;
+    @apply before:translate-x-[-100%] before:bg-gradient-to-r;
+    @apply before:from-primary before:to-primary/80;
+    @apply before:transition-transform before:duration-500 before:ease-out;
+    @apply hover:before:translate-x-0 hover:text-primary-foreground;
+    @apply hover:border-primary hover:shadow-glow;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-md bg-card/50 border border-border/50;
+    @apply shadow-card;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent;
+  }
+
+  .floating-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .glow-effect {
+    @apply shadow-glow;
+  }
+}
+
+@layer utilities {
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-dark {
+    box-shadow: var(--shadow-dark);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-quick {
+    transition: var(--transition-quick);
+  }
+
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+}
+
+/* Custom Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(0 0% 98% / 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(0 0% 98% / 0.2);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
