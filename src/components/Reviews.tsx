@@ -36,7 +36,7 @@ const reviews = [
     image: 'IMG-20250703-WA0025.jpg',
     rating: 5,
     review:
-      "BoldHue's technical expertise is impressive. They built a complex web application for us with seamless functionality. Their communication throughout the project was excellent.",
+      "Kashan's technical expertise is impressive. They built a complex web application for us with seamless functionality. Their communication throughout the project was excellent.",
   },
   {
     name: 'Cenphix',
